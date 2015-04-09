@@ -1,0 +1,15 @@
+.hide{
+ 	opacity:0;
+	-webkit-transition:opacity 700ms ease;
+}
+
+
+#loader{
+	position: fixed;
+	top:10px;
+	right: 10px;
+	width: 100px;
+	background-color: #333;
+	color:#FFF;
+	-webkit-transition:opacity 700ms ease-in;
+}
