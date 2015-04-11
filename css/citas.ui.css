@@ -6,10 +6,188 @@
 
 #loader{
 	position: fixed;
-	top:10px;
-	right: 10px;
-	width: 100px;
-	background-color: #333;
+	top:0px;
+	right: 46%;
+	width: 170px;
+	height:50px;
+	text-align:center;
+	background-color: #F90;
+	border-radius:0px 0px 10px 10px;
 	color:#FFF;
+	padding-top:20px;
+	font-weight:bold;
+	z-index:99999;
 	-webkit-transition:opacity 700ms ease-in;
 }
+
+
+body{
+	font-family:Verdana, Tahoma, sans-serif;
+	font-size:12px;
+	margin:0px;
+}
+
+#header{
+	height:100px;
+	background-color:#333;
+	color:#FFF;	
+	padding:30px 20px 0px 30px;
+}
+
+	#header h1{
+		text-decoration:underline;
+		font-size:3em;	
+		margin:0px;
+	}
+
+
+#divLogin{
+	margin:0 auto;
+	margin-top:70px;	
+	width:600px;
+	border:solid 1px #999;
+	border-radius:10px;
+	padding:15px 7px 10px 7px;
+}
+
+.campo{
+	margin-bottom:5px;
+	padding-right:5px;	
+}
+
+	.campo label{
+		display:block;
+		margin-bottom:5px;
+	}
+	
+	.campo input,
+	.campo textarea{
+		width:100%;
+		height:26px;	
+		border-radius:5px;
+		padding:4px 0px 3px 5px;
+		border:solid 1px #CCC;
+	}
+
+
+.divBtn{
+	text-align:right;	
+}
+
+	.divBtn button{
+		height:35px;
+		color:#FFF;
+		background-color:#0C0;
+		border:none;
+		font-size:14px;
+		border-radius:6px; 
+	}
+	
+		.divBtn button:hover{
+			cursor:pointer;
+			background-color:#4D4;
+		}
+
+#notificacion{
+	font-size:14px;
+	color:#F60;
+	display:none;	
+}
+
+
+#navBar{
+	height:45px;
+	background-color:#F90;
+	color:#FFF;	
+	text-align:center;
+}
+
+	#navBar ul{
+		list-style:none;	
+		margin:0px;
+		padding:0px;
+	}
+	
+		#navBar ul li{
+			list-style:none;
+			display:inline-block;	
+			font-size: 18px;
+			font-weight: bold;
+			padding-top: 10px;
+			margin-right: 15px;
+		}
+
+		#navBar ul li a {
+		  text-decoration: none;
+		  color: #FFF;
+		}
+		
+				#navBar ul li a:focus,
+				#navBar ul li a:hover {
+					text-decoration:underline;
+					cursor:pointer;
+				}
+
+#contentPage{	
+	padding:20px;
+}
+
+
+	#contentPage>div:not(.activo){
+		display:none;	
+	}
+	
+	#contentPage div.activo{
+		display:block;	
+	}
+	
+
+
+.item{
+
+	border-bottom:solid  1px #666;
+}
+
+	.item h3{
+		background-color:#CCC;
+		min-height:40px;		
+		border-top:solid  1px #DDD;	
+		padding:10px 0px 6px 10px;	
+		font-size:16px;
+		margin:0px;
+		padding:10px 0px 5px 10px;	
+	}
+	
+		.item h3:hover{
+			cursor:pointer;	
+		}
+	
+	.item .item_detalle{
+		display:none;	
+		background-color:#FFF;
+		border-right:solid 1px #DDD;
+		border-left:solid 1px #DDD;
+		padding:10px 20px 10px 20px;
+	}
+
+
+
+@media (max-width: 600px) {
+	
+	#divLogin{
+		width:80%;	
+	}
+	
+	button{
+		display:block;
+		width:100%;
+		height:35px;
+		margin-bottom:15px	
+	}
+	
+}
+
+
+
+
+

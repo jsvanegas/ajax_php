@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.12
 -- http://www.phpmyadmin.net
 --
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `Cita` (
   `Descripcion` varchar(200) NOT NULL,
   `Lugar` varchar(100) NOT NULL,
   `Fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`idNota`)
+  PRIMARY KEY (`idCita`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
